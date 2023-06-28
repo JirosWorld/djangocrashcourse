@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <title>TraversyMedia Blog</title>
-</head>
-<body>
-  <header class="container center-align">
-    <h1>TraversyMedia Blog</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>TraversyMedia Blog</title>
+  </head>
+  <body>
+    <header class="container center-align">
+      <h1>TraversyMedia Blog</h1>
+    </header>
 
-  <div class="container">
-    {% block content %}
-    {% endblock %}
-    <br>
+    <div class="container">
+      {% block content %} {% endblock %}
+      <br />
 
-    <a style="display:block" class="center-align" href="/admin">Admin Login</a>
-  </div>
-</body>
+      <a style="display: block" class="center-align" href="/admin"
+        >Admin Login</a
+      >
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>

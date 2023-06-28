@@ -1,8 +1,10 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('posts.urls')),
-    url(r'^admin/', admin.site.urls),
-    url(r'^posts/', include('posts.urls')),
+    path('', include('posts.urls')),
+    path('admin/', admin.site.urls),
+    path('posts/', include('posts.urls')),
 ]
+
+# Django version 2.0's path() object now doesn't support regular expressions. Use re_path for regular expressions, or leave out the '^'
